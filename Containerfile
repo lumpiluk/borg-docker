@@ -1,6 +1,6 @@
 FROM alpine:3.20
 
-RUN apk add --no-cache ssmtp borgbackup
+RUN apk add --no-cache ssmtp borgbackup bash
 
 # copy crontabs for root user
 # COPY config/cronjobs /etc/crontabs/root

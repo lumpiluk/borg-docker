@@ -2,7 +2,7 @@ services:
   borg-docker:
     build:
       context: .
-      dockerfile: Containerfile
+      dockerfile: Dockerfile
     # run crond as main process of container
     entrypoint: ["sh", "-c", "crontab /tasks.cron && crond -f -d 8"]
     #entrypoint: ["ls", "-lah", "/"]

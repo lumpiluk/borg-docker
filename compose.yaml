@@ -8,4 +8,5 @@ services:
     #entrypoint: ["ls", "-lah", "/"]
     volumes:
       - ./tasks.cron:/tasks.cron
+      - ./ssmtp.conf:/etc/ssmtp/ssmtp.conf
       - .:/mnt/outdir
